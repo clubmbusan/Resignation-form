@@ -34,9 +34,9 @@
         .button-container {
             display: flex; /* Flexbox 사용하여 버튼들을 가로로 배치 */
             justify-content: space-between; /* 버튼 사이에 공간을 일정하게 배치 */
-            flex-wrap: wrap; /* 화면 크기에 따라 버튼이 다음 줄로 넘어가게 설정 */
             gap: 15px; /* 버튼 간 간격 */
             margin-top: 20px;
+            flex-wrap: nowrap; /* 버튼들이 줄바꿈 없이 한 줄로만 배치되게 설정 */
         }
         .download-btn {
             text-decoration: none;
@@ -73,11 +73,6 @@
             <!-- 시말서 양식 다운로드 버튼 -->
             <a href="https://raw.githubusercontent.com/clubmbusan/Resignation-form/main/시말서%20양식%20hwp.hwp" class="download-btn" download>
                 시말서 양식 HWP 다운로드
-            </a>
-
-            <!-- 새로운 양식 다운로드 버튼 -->
-            <a href="https://raw.githubusercontent.com/clubmbusan/Resignation-form/main/새로운%20양식%20hwp.hwp" class="download-btn" download>
-                새로운 양식 HWP 다운로드
             </a>
         </div>
     </div>
