@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사직서 양식 다운로드</title>
+    <title>각종 양식 HWP 다운로드</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 600px; /* 직사각형 박스의 너비를 설정 */
+            max-width: 900px; /* 직사각형 박스의 너비를 설정 */
             width: 100%;
             margin: 0 auto; /* 중앙 정렬 */
             background-color: #fff;
@@ -25,8 +25,20 @@
             text-align: center;
             color: #333;
         }
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .button-container {
+            display: flex; /* Flexbox 사용하여 버튼들을 가로로 배치 */
+            justify-content: space-between; /* 버튼 사이에 공간을 일정하게 배치 */
+            flex-wrap: wrap; /* 화면 크기에 따라 버튼이 다음 줄로 넘어가게 설정 */
+            gap: 15px; /* 버튼 간 간격 */
+            margin-top: 20px;
+        }
         .download-btn {
-            display: inline-block;
             text-decoration: none;
             padding: 15px 40px;
             background-color: #4CAF50;
@@ -34,30 +46,40 @@
             font-size: 18px;
             border-radius: 5px;
             text-align: center;
-            margin-top: 20px;
             transition: background-color 0.3s;
+            flex: 1 1 30%; /* 버튼의 크기를 일정 비율로 유지하고, 화면 크기에 따라 크기 자동 조정 */
         }
         .download-btn:hover {
             background-color: #45a049;
-        }
-        p {
-            margin-bottom: 20px;
-            font-size: 16px;
-            line-height: 1.5;
-            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>사직서 양식 HWP 다운로드</h1>
-        <p>아래 버튼을 클릭하여 사직서 양식을 다운로드하세요.</p>
-        
-        <!-- 다운로드 버튼 -->
-       <a href="https://raw.githubusercontent.com/clubmbusan/Resignation-form/main/사직서%20양식%20hwp.hwp" class="download-btn" download>
-            사직서 양식 HWP 다운로드
-        </a>
+        <h1>각종 양식 HWP 다운로드</h1>
+        <p>아래 버튼을 클릭하여 원하는 양식을 다운로드하세요.</p>
+
+        <div class="button-container">
+            <!-- 사직서 양식 다운로드 버튼 -->
+            <a href="https://raw.githubusercontent.com/clubmbusan/Resignation-form/main/사직서%20양식%20hwp.hwp" class="download-btn" download>
+                사직서 양식 HWP 다운로드
+            </a>
+
+            <!-- 경위서 양식 다운로드 버튼 -->
+            <a href="https://raw.githubusercontent.com/clubmbusan/Resignation-form/main/경위서%20양식%20hwp.hwp" class="download-btn" download>
+                경위서 양식 HWP 다운로드
+            </a>
+
+            <!-- 시말서 양식 다운로드 버튼 -->
+            <a href="https://raw.githubusercontent.com/clubmbusan/Resignation-form/main/시말서%20양식%20hwp.hwp" class="download-btn" download>
+                시말서 양식 HWP 다운로드
+            </a>
+
+            <!-- 새로운 양식 다운로드 버튼 -->
+            <a href="https://raw.githubusercontent.com/clubmbusan/Resignation-form/main/새로운%20양식%20hwp.hwp" class="download-btn" download>
+                새로운 양식 HWP 다운로드
+            </a>
+        </div>
     </div>
 </body>
 </html>
-
